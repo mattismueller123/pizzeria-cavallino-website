@@ -1,0 +1,882 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Pizzeria Cavallino by Ory - Authentische italienische Küche in Niestetal Heiligenrode">
+    <title>Pizzeria Cavallino by Ory | Niestetal</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav id="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <img src="assets/images/logo-transparent.png" alt="Pizzeria Cavallino Logo">
+            </div>
+            <button class="menu-toggle" id="menuToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">Über Uns</a></li>
+                <li><a href="#menu">Speisekarte</a></li>
+                <li><a href="#gallery">Galerie</a></li>
+                <li><a href="#contact">Kontakt</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <h1>Pizzeria Cavallino</h1>
+            <p class="subtitle">by Ory</p>
+            <p class="tagline">Authentische italienische Küche in Niestetal</p>
+            <a href="#menu" class="cta-button">Unsere Speisekarte</a>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="section-header">
+                <h2>Willkommen</h2>
+                <div class="divider"></div>
+            </div>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>In der Pizzeria Cavallino by Ory erwarten Sie authentische italienische Spezialitäten in gemütlicher Atmosphäre. Unsere frisch zubereiteten Pizzen, hausgemachten Pasta-Gerichte und vielfältigen Salate werden mit ausgewählten Zutaten und viel Liebe zum Detail zubereitet.</p>
+                    <p>Ob für einen gemütlichen Abend mit Freunden, ein romantisches Dinner oder eine große Feier - bei uns fühlen Sie sich wie in Italien.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Menu Section -->
+    <section id="menu" class="menu">
+        <div class="container">
+            <div class="section-header">
+                <h2>Unsere Speisekarte</h2>
+                <div class="divider"></div>
+            </div>
+
+            <!-- Menu Navigation -->
+            <div class="menu-nav">
+                <button class="menu-nav-btn active" data-category="vorspeisen">Vorspeisen</button>
+                <button class="menu-nav-btn" data-category="salate">Salate</button>
+                <button class="menu-nav-btn" data-category="pasta">Pasta</button>
+                <button class="menu-nav-btn" data-category="pizza">Pizza</button>
+                <button class="menu-nav-btn" data-category="fleisch">Fleischgerichte</button>
+                <button class="menu-nav-btn" data-category="fisch">Fischgerichte</button>
+                <button class="menu-nav-btn" data-category="beilagen">Beilagen</button>
+            </div>
+
+            <!-- Vorspeisen -->
+            <div class="menu-category active" data-category="vorspeisen">
+                <h3 class="category-title">Vorspeisen</h3>
+                <div class="menu-grid">
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h4>Hirtenkäse</h4>
+                            <span class="price">13,00 €</span>
+                        </div>
+                        <p>Mit aromatischen Tomaten, mediterranen Oliven, milden Peperoni, Knoblauch und ofenwarmen Pizzabrot</p>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h4>Anti Pasti</h4>
+                            <span class="price">13,00 €</span>
+                        </div>
+                        <p>Mit gebratenen Auberginen, Zucchini, Paprika, Champignons, ofenfrischem Pizzabrot, aromatischem Knoblauch und bestem Olivenöl</p>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h4>Carpaccio</h4>
+                            <span class="price">16,00 €</span>
+                        </div>
+                        <p>Hauchdünne Scheiben vom Rinderfilet, mit Balsamico-Creme, Olivenöl und Hartkäseraspeln und kleinem Pizzabrot</p>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h4>Bruschetta</h4>
+                            <span class="price">11,00 €</span>
+                        </div>
+                        <p>Frisch geröstetes Ciabatta mit Knoblauch, sonnengereiften Tomaten und Basilikum</p>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h4>Champignons</h4>
+                            <span class="price">13,00 €</span>
+                        </div>
+                        <p>Gefüllt mit Thunfisch, Hirtenkäse, Knoblauch und Parmesan überbacken mit Tomatensauce und Käse und einem Pizza Brot</p>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h4>Pizzabrot mit Tomaten</h4>
+                            <span class="price">6,50 €</span>
+                        </div>
+                        <p>Knoblauch und Basilikum</p>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h4>Pizzabrot mit Knoblauch</h4>
+                            <span class="price">5,50 €</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Salate -->
+            <div class="menu-category" data-category="salate">
+                <h3 class="category-title">Salate</h3>
+                <div class="menu-grid">
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h4>Hirtensalat</h4>
+                            <span class="price">13,00 €</span>
+                        </div>
+                        <p>Mit Eisbergsalat, Tomaten, Gurken, Paprika, Hirtenkäse, Oliven und milden Peperoni</p>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h4>Salat Tonno</h4>
+                            <span class="price">13,00 €</span>
+                        </div>
+                        <p>Mit Eisbergsalat, Tomaten, Gurken, Thunfisch, Zwiebeln und Käse</p>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h4>Salat Chef</h4>
+                            <span class="price">12,00 €</span>
+                        </div>
+                        <p>Mit Eisbergsalat, Tomaten, Gurken, Schinken, Paprika und Käse</p>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h4>Salat Scampi</h4>
+                            <span class="price">18,00 €</span>
+                        </div>
+                        <p>Mit Eisbergsalat, Tomaten, Rucola und sechs geschälten Riesengarnelen</p>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h4>Grilled Veggie Bowl</h4>
+                            <span class="price">18,00 €</span>
+                        </div>
+                        <p>Mit gegrilltem Gemüse, Mozzarella, Oliven, Strauchtomaten, Basilikumpesto, Sonnenblumenkernen und Basilikum</p>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h4>Salat Mama</h4>
+                            <span class="price">12,00 €</span>
+                        </div>
+                        <p>Mit Eisbergsalat, Tomaten, Gurken, Zwiebeln, und Mais</p>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h4>Salat Capri</h4>
+                            <span class="price">11,50 €</span>
+                        </div>
+                        <p>Mit Tomaten, Mozzarella, Zwiebeln und Basilikum</p>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h4>Salat Ory</h4>
+                            <span class="price">12,00 €</span>
+                        </div>
+                        <p>Mit Eisbergsalat, Tomaten, Gurken, Schinken, Zwiebeln und Käse</p>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h4>Salat American Style</h4>
+                            <span class="price">13,50 €</span>
+                        </div>
+                        <p>Mit Eisbergsalat, Tomaten, Gurken und gebratenen Putenstreifen</p>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h4>Salat Nizza</h4>
+                            <span class="price">11,50 €</span>
+                        </div>
+                        <p>Mit Eisbergsalast, Tomaten, Zwiebeln, Rucola und Oliven</p>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h4>Salat Napoletana</h4>
+                            <span class="price">9,50 €</span>
+                        </div>
+                        <p>Tomatensalat mit Zwiebeln</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Pasta -->
+            <div class="menu-category" data-category="pasta">
+                <h3 class="category-title">Pasta</h3>
+                <div class="menu-grid">
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h4>Tortellini Del Nonna</h4>
+                            <span class="price">12,50 €</span>
+                        </div>
+                        <p>Mit Champignons, Tomatenstückchen, Erbsen, Sahnesauce und Knoblauch</p>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h4>Tortellini A Forno</h4>
+                            <span class="price">12,50 €</span>
+                        </div>
+                        <p>Mit Schinken, Champignons ,Knoblauch in Tomaten-Sahnesauce</p>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h4>Linguine Mama Rosa</h4>
+                            <span class="price">12,50 €</span>
+                        </div>
+                        <p>Mit Gorgonzola, Knoblauch und Sahnesauce</p>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h4>Linguine Sardellen</h4>
+                            <span class="price">12,50 €</span>
+                        </div>
+                        <p>Mit Sardellen, Oliven, Knoblauch und Tomatensauce</p>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h4>Pasta Al Forno</h4>
+                            <span class="price">11,50 €</span>
+                        </div>
+                        <p>Mit Hackfleischsauce</p>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h4>Rigatoni Mario</h4>
+                            <span class="price">12,50 €</span>
+                        </div>
+                        <p>Mit Broccoli und Knoblauch-Sahnesauce</p>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h4>Lasagne Al Forno</h4>
+                            <span class="price">12,50 €</span>
+                        </div>
+                        <p>Mit Hackfleischsauce und Käse überbacken</p>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h4>Lasagne Spezial</h4>
+                            <span class="price">13,50 €</span>
+                        </div>
+                        <p>Mit Spinat, Hirtenkäse, Knoblauch, Sahnesauce Käse überbacken</p>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h4>Pasta Ory</h4>
+                            <span class="price">13,50 €</span>
+                        </div>
+                        <p>Mit Spinat, Zucchini, frischen Champignons, Broccoli, Tomatenstückchen, Knoblauch und Sahnesauce</p>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h4>Rigatoni Meeresfrüchte</h4>
+                            <span class="price">14,50 €</span>
+                        </div>
+                        <p>Mit Tomaten-Sahnesauce</p>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h4>Linguine Shrimps</h4>
+                            <span class="price">14,50 €</span>
+                        </div>
+                        <p>Mit Shrimps, Knoblauch und Tomaten-Sahnesauce</p>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h4>Linguine Shrimps e Spinaci</h4>
+                            <span class="price">14,50 €</span>
+                        </div>
+                        <p>Mit Shrimps, Spinat, Knoblauch und Sahnesauce</p>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h4>Linguine Napoli</h4>
+                            <span class="price">10,50 €</span>
+                        </div>
+                        <p>Mit Tomatensauce</p>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h4>Linguine Bolognese</h4>
+                            <span class="price">11,50 €</span>
+                        </div>
+                        <p>Mit Hackfleischsauce</p>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h4>Linguine Matriciana</h4>
+                            <span class="price">12,50 €</span>
+                        </div>
+                        <p>Mit Hackfleischsauce und Peperoni</p>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h4>Linguine Carbonara</h4>
+                            <span class="price">12,50 €</span>
+                        </div>
+                        <p>Mit Schinken, Ei, Sahnesauce und Knoblauch</p>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h4>Linguine Ricotta e Panna</h4>
+                            <span class="price">12,50 €</span>
+                        </div>
+                        <p>Mit Hirtenkäse, Knoblauch und Sahnesauce</p>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h4>Tortellini a La Panna</h4>
+                            <span class="price">12,50 €</span>
+                        </div>
+                        <p>Mit Schinken, Sahnesauce und Knoblauch</p>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h4>Linguine a La Scampi</h4>
+                            <span class="price">16,50 €</span>
+                        </div>
+                        <p>Mit Knoblauch, Olivenöl, geschälten Riesengarnelen und Dill</p>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h4>Linguine Wolli</h4>
+                            <span class="price">12,50 €</span>
+                        </div>
+                        <p>Mit Tomaten-Sahnesauce und Knoblauch</p>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h4>Linguine Agilio e Olio</h4>
+                            <span class="price">11,50 €</span>
+                        </div>
+                        <p>Mit Knoblauch, Peperoni, Parmesan und Olivenöl</p>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h4>Gnocchi Al Napoli</h4>
+                            <span class="price">12,50 €</span>
+                        </div>
+                        <p>Mit Broccoli, Spinat, Champignons, Tomatensauce und Knoblauch</p>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h4>Gnocchi Spinat</h4>
+                            <span class="price">13,50 €</span>
+                        </div>
+                        <p>Mit Spinat, Champignons, Broccoli, Putenstreifen, Tomatenstücken, Sahnesauce und Knoblauch</p>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h4>Linguine Ory Spezial</h4>
+                            <span class="price">13,50 €</span>
+                        </div>
+                        <p>Mit Putenstreifen, Broccoli und Zwiebel-Sahnesauce</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Pizza -->
+            <div class="menu-category" data-category="pizza">
+                <h3 class="category-title">Pizza</h3>
+                <div class="menu-grid pizza-grid">
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h4>Pizza Margherita</h4>
+                            <span class="price">8,50 €</span>
+                        </div>
+                        <p>Mit Tomatensauce</p>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h4>Pizza Schinken</h4>
+                            <span class="price">9,50 €</span>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h4>Pizza Salami</h4>
+                            <span class="price">9,50 €</span>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h4>Pizza Funghi</h4>
+                            <span class="price">9,50 €</span>
+                        </div>
+                        <p>Mit frischen Champignons</p>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h4>Pizza Prosciutto E Funghi</h4>
+                            <span class="price">10,50 €</span>
+                        </div>
+                        <p>Mit Schinken und frischen Champignons</p>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h4>Pizza Hawaii</h4>
+                            <span class="price">10,50 €</span>
+                        </div>
+                        <p>Mit Schinken und Ananas</p>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h4>Pizza Tonno</h4>
+                            <span class="price">10,50 €</span>
+                        </div>
+                        <p>Mit Thunfisch und Zwiebeln</p>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h4>Pizza Diavolo 🌶️</h4>
+                            <span class="price">10,50 €</span>
+                        </div>
+                        <p>Mit Salami, scharfen Peperoni und Oliven</p>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h4>Pizza Quattro Stagioni</h4>
+                            <span class="price">11,50 €</span>
+                        </div>
+                        <p>Mit Schinken, Paprika, Pilzen und Artischocken</p>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h4>Pizza Quattro Formaggi</h4>
+                            <span class="price">11,50 €</span>
+                        </div>
+                        <p>Mit Gorgonzola, Hirtenkäse, und Knoblauch</p>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h4>Pizza Pomodori</h4>
+                            <span class="price">11,50 €</span>
+                        </div>
+                        <p>Mit frischen Tomaten, Mozzarella und Basilikum</p>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h4>Pizza Vegetaria</h4>
+                            <span class="price">11,50 €</span>
+                        </div>
+                        <p>Mit Artischocken, Zucchini, gekochtem Ei und Mozzarella</p>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h4>Pizza Capricciosa</h4>
+                            <span class="price">10,50 €</span>
+                        </div>
+                        <p>Mit Salami, Paprika und Pilzen</p>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h4>Pizza Gyros</h4>
+                            <span class="price">11,50 €</span>
+                        </div>
+                        <p>Mit Gyrosfleisch, Zwiebeln und Tzatziki</p>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h4>Pizza Gyros Spezial</h4>
+                            <span class="price">12,50 €</span>
+                        </div>
+                        <p>Mit Gyrosfleisch, Zwiebeln, Hirtenkäse, milden Peperoni und Tzatziki</p>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h4>Pizza Lotti</h4>
+                            <span class="price">13,50 €</span>
+                        </div>
+                        <p>Mit Parmaschinken, frischen Tomaten, Knoblauch, Rucola, Parmesan und Balsamico-Creme</p>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h4>Pizza Rucola</h4>
+                            <span class="price">12,50 €</span>
+                        </div>
+                        <p>Mit frischen Tomaten, frischen Champignons, frischem Rucola und Speck</p>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h4>Pizza Spinat</h4>
+                            <span class="price">11,50 €</span>
+                        </div>
+                        <p>Mit Spinat, Hirtenkäse und Knoblauch</p>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h4>Pizza Cavalino</h4>
+                            <span class="price">11,50 €</span>
+                        </div>
+                        <p>Mit Salami, Pilzen, gekochtem Ei und Paprika</p>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h4>Pizza Casa Cava</h4>
+                            <span class="price">10,50 €</span>
+                        </div>
+                        <p>Mit Salami und Schinken</p>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h4>Pizza Grandiosa</h4>
+                            <span class="price">13,50 €</span>
+                        </div>
+                        <p>Mit Tomatensauce und 5 Zutaten nach Wahl</p>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h4>Pizza Isa</h4>
+                            <span class="price">12,00 €</span>
+                        </div>
+                        <p>Mit Sucuk, Zwiebeln, Mais und Champignons</p>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h4>Pizza Kai 🌶️</h4>
+                            <span class="price">13,50 €</span>
+                        </div>
+                        <p>Mit Thunfisch, Zwiebeln, scharfen Peperoni und Hirtenkäse</p>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h4>Pizza Dilara 🌶️</h4>
+                            <span class="price">14,00 €</span>
+                        </div>
+                        <p>Mit frischen Champignons, scharfen Peperoni, Thunfisch und Hirtenkäse</p>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h4>Pizza Panda 🌶️</h4>
+                            <span class="price">15,00 €</span>
+                        </div>
+                        <p>Mit Salami, Shrimps, milden Peperoni und Tzatziki</p>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h4>Pizza Elfen 🌶️</h4>
+                            <span class="price">12,50 €</span>
+                        </div>
+                        <p>Mit Zwiebeln, scharfen Peperoni, frischen Champignons, Artischocken und Knoblauch</p>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h4>Pizza Doktore</h4>
+                            <span class="price">14,50 €</span>
+                        </div>
+                        <p>Mit Spinat, Shrimps, Knoblauch und Hirtenkäse</p>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h4>Pizza Sezer</h4>
+                            <span class="price">15,50 €</span>
+                        </div>
+                        <p>Mit Meeresfrüchten, Shrimps und Knoblauch</p>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h4>Pizza Araz</h4>
+                            <span class="price">13,50 €</span>
+                        </div>
+                        <p>Mit Shrimps und Knoblauch</p>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h4>Calzone A La Christoph</h4>
+                            <span class="price">11,50 €</span>
+                        </div>
+                        <p>Mit Schinken und Pilzen</p>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h4>Calzone Hawaii</h4>
+                            <span class="price">12,00 €</span>
+                        </div>
+                        <p>Mit Schinken, Ananas und Pilzen</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Fleischgerichte -->
+            <div class="menu-category" data-category="fleisch">
+                <h3 class="category-title">Fleischgerichte</h3>
+                <p class="category-note">Alle Gerichte werden mit Pommes frites und Salat serviert.</p>
+                <div class="menu-grid">
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h4>Schnitzel Wiener Art</h4>
+                            <span class="price">14,50 €</span>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h4>Jägerschnitzel</h4>
+                            <span class="price">15,50 €</span>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h4>Rahmschnitzel</h4>
+                            <span class="price">15,50 €</span>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h4>Champignon-Rahm Schnitzel</h4>
+                            <span class="price">15,50 €</span>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h4>Schnitzel Champignon-Zwiebeln</h4>
+                            <span class="price">15,50 €</span>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h4>Hawaii Schnitzel</h4>
+                            <span class="price">15,50 €</span>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h4>Paprikaschnitzel</h4>
+                            <span class="price">15,50 €</span>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h4>Schmandschnitzel</h4>
+                            <span class="price">15,50 €</span>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h4>Schnitzel mit Sauce Hollandaise</h4>
+                            <span class="price">15,50 €</span>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h4>Putenschnitzel mit Champignon-Rahmsauce</h4>
+                            <span class="price">16,50 €</span>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h4>Scallopine Valdaosta</h4>
+                            <span class="price">18,50 €</span>
+                        </div>
+                        <p>Medaillons vom Schweinefilet in Sahne-Weißweinsauce mit Champignons und Käse</p>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h4>Rumpsteak mit Kräuterbutter</h4>
+                            <span class="price">22,50 €</span>
+                        </div>
+                        <p>Ohne Pommes frites</p>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h4>Rumpsteak mit Champignons und Zwiebeln</h4>
+                            <span class="price">23,50 €</span>
+                        </div>
+                        <p>Ohne Pommes frites</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Fischgerichte -->
+            <div class="menu-category" data-category="fisch">
+                <h3 class="category-title">Fischgerichte</h3>
+                <div class="menu-grid">
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h4>Riesengarnelen (6 Stück)</h4>
+                            <span class="price">17,50 €</span>
+                        </div>
+                        <p>Mit Pizzabrot</p>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h4>Calamaris mit Tzatziki</h4>
+                            <span class="price">13,50 €</span>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h4>Calamaris mit Tzatziki und Pommes frites</h4>
+                            <span class="price">15,50 €</span>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h4>Lachsfilet nach Art des Hauses</h4>
+                            <span class="price">18,50 €</span>
+                        </div>
+                        <p>Mit Pommes Frites, Kräutersauce und Salatbeilage</p>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h4>Lachsfilet</h4>
+                            <span class="price">19,50 €</span>
+                        </div>
+                        <p>Mit frischen Kräutern, Tomatenwürfeln, Knoblauch, Bandnudeln und Weißwein-Sahnesauce</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Beilagen -->
+            <div class="menu-category" data-category="beilagen">
+                <h3 class="category-title">Beilagen & Desserts</h3>
+                <div class="menu-grid">
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h4>Pommes frites</h4>
+                            <span class="price">4,50 €</span>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h4>Röstis</h4>
+                            <span class="price">4,50 €</span>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h4>Kroketten</h4>
+                            <span class="price">4,50 €</span>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h4>Chicken Nuggets (6 Stück)</h4>
+                            <span class="price">8,50 €</span>
+                        </div>
+                        <p>Mit Dip und Pommes Frites</p>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h4>Mozzarella Sticks (6 Stück)</h4>
+                            <span class="price">6,50 €</span>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h4>Tzatziki</h4>
+                            <span class="price">3,50 €</span>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h4>Tartufo Haselnuss</h4>
+                            <span class="price">5,50 €</span>
+                        </div>
+                        <p>Haselnusseis umhüllt mit Haselnüssen, Schokoladenkern und Früchten</p>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h4>Tartufo Schokolade</h4>
+                            <span class="price">5,50 €</span>
+                        </div>
+                        <p>Schokoladeneis umhüllt mit Kakao, Vanillekern und Früchten</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="gallery">
+        <div class="container">
+            <div class="section-header">
+                <h2>Impressionen</h2>
+                <div class="divider"></div>
+            </div>
+            <div class="gallery-grid">
+                <div class="gallery-item">
+                    <img src="assets/images/01a10b30-6420-74c9-856b-5a68cbf84959.jpg" alt="Restaurant Interior">
+                </div>
+                <div class="gallery-item">
+                    <img src="assets/images/01a10b30-643c-712c-83f9-a63906d0f1ce.jpg" alt="Buffet">
+                </div>
+                <div class="gallery-item">
+                    <img src="assets/images/01a10b30-6451-7b76-ab3c-6915fab710cd.jpg" alt="Team">
+                </div>
+                <div class="gallery-item">
+                    <img src="assets/images/01a10b30-6467-7f2c-baa7-5de82bc269ca.jpg" alt="Bar">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2>Kontakt & Öffnungszeiten</h2>
+                <div class="divider"></div>
+            </div>
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <h3>Adresse</h3>
+                    <p>Kleine Gasse 1<br>34266 Niestetal<br>Heiligenrode</p>
+                    
+                    <h3>Telefon</h3>
+                    <p><a href="tel:05617034704">0561 / 70 34 704</a></p>
+                    
+                    <h3>Öffnungszeiten</h3>
+                    <p><strong>Montag - Samstag</strong><br>17:00 - 22:00 Uhr</p>
+                    <p><strong>Sonntag</strong><br>12:00 - 22:00 Uhr</p>
+                </div>
+                <div class="map-container">
+                    <iframe 
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2531.8!2d9.4833!3d51.3167!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47bb3d6e8e8e8e8e%3A0x0!2sKleine%20Gasse%201%2C%2034266%20Niestetal!5e0!3m2!1sde!2sde!4v1234567890" 
+                        width="100%" 
+                        height="400" 
+                        style="border:0;" 
+                        allowfullscreen="" 
+                        loading="lazy" 
+                        referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <img src="assets/images/logo-transparent.png" alt="Pizzeria Cavallino Logo">
+                </div>
+                <p>&copy; 2024 Pizzeria Cavallino by Ory. Alle Rechte vorbehalten.</p>
+                <div class="footer-links">
+                    <a href="#impressum">Impressum</a>
+                    <a href="#datenschutz">Datenschutz</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
