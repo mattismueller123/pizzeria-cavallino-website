@@ -357,7 +357,6 @@ footer {
         text-align: center;
         transition: 0.3s;
         box-shadow: 0 10px 27px rgba(0,0,0,0.05);
-        padding: 20px 0;
     }
 
     .nav-links.active {
@@ -365,23 +364,12 @@ footer {
     }
 
     .nav-links li {
-        margin: 0;
+        margin: 18px 0;
     }
 
     .nav-links a {
-        display: block;
-        padding: 22px 30px;
-        font-size: 20px;
-        font-weight: 600;
         color: #2c2c2c;
-        border-bottom: 1px solid #f0f0f0;
-        transition: all 0.3s ease;
-    }
-
-    .nav-links a:hover {
-        background-color: #f9f9f9;
-        color: #c9a961;
-        padding-left: 35px;
+        font-size: 18px;
     }
 
     .hamburger {
