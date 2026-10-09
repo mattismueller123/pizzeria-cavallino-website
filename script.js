@@ -15,12 +15,14 @@ document.addEventListener('DOMContentLoaded', function() {
     menuToggle.addEventListener('click', function() {
         menuToggle.classList.toggle('active');
         navMenu.classList.toggle('active');
+        navbar.classList.toggle('menu-open');
     });
 
     navLinks.forEach(link => {
         link.addEventListener('click', function() {
             menuToggle.classList.remove('active');
             navMenu.classList.remove('active');
+            navbar.classList.remove('menu-open');
         });
     });
 
