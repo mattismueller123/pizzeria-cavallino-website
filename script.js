@@ -8,6 +8,17 @@ document.addEventListener('DOMContentLoaded', function() {
     const menuToggle = document.getElementById('menuToggle');
     const navMenu = document.getElementById('navMenu');
     const navbar = document.getElementById('navbar');
+    const navBar = navbar.querySelector('.nav-container');
+
+    function placeMobileMenu() {
+        navMenu.style.paddingTop = navBar.offsetHeight + 'px';
+    }
+
+    placeMobileMenu();
+    window.addEventListener('resize', placeMobileMenu);
+    if (window.ResizeObserver) {
+        new ResizeObserver(placeMobileMenu).observe(navBar);
+    }
     const menuNavBtns = document.querySelectorAll('.menu-nav-btn');
     const menuCategories = document.querySelectorAll('.menu-category');
     const navLinks = document.querySelectorAll('.nav-menu a');

@@ -521,37 +521,44 @@ footer p {
 
 @media (max-width: 968px) {
     .nav-container {
+        position: relative;
+        z-index: 2;
         padding: 0 15px;
+    }
+
+    .logo,
+    .menu-toggle {
+        position: relative;
+        z-index: 3;
     }
 
     nav.menu-open {
         overflow: visible;
+        background: #ffffff;
     }
 
     .nav-menu {
         position: absolute;
         left: 0;
         right: 0;
-        top: calc(100% - 1px);
+        top: 0;
         flex-direction: column;
         align-items: stretch;
         background-color: #ffffff;
         width: 100%;
         text-align: right;
-        transform: translateY(-8px);
         opacity: 0;
         visibility: hidden;
         pointer-events: none;
-        transition: transform 0.25s ease, opacity 0.25s ease, visibility 0.25s;
+        transition: opacity 0.2s ease, visibility 0.2s;
         box-shadow: 0 16px 30px rgba(0, 0, 0, 0.08);
-        padding: 6px 0 10px;
+        padding: 96px 0 10px;
         gap: 0;
         line-height: normal;
-        z-index: 1001;
+        z-index: 1;
     }
 
     .nav-menu.active {
-        transform: translateY(0);
         opacity: 1;
         visibility: visible;
         pointer-events: auto;
