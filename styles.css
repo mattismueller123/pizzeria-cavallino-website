@@ -713,7 +713,10 @@ footer p {
     }
 
     .cta-button {
-        padding: 12px 35px;
-        font-size: 12px;
+        padding: 18px 32px;
+        font-size: 17px;
+        font-weight: 600;
+        letter-spacing: 1px;
+        line-height: 1.3;
     }
 }
